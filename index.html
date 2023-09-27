@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="cal-wrapper">
+    <header>
+      <div class="cal-header flex-default">
+        <h1>Calc</h1>
+        <div class="cal-sub flex-default">
+          <h2>THEME</h2>
+          <div class="toggle-content flex-column">
+            <h3> <span>1</span> <span>2</span> <span>3</span></h3>
+            <div class="toggle flex-default">
+              <div id="toggler"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container flex-column ">
+        <input type="text" id="inputbox" name="display"/>
+        <div class="buttons">
+          <button onclick="getValue(7)">7</button>
+          <button onclick="getValue(8)">8</button>
+          <button onclick="getValue(9)">9</button>
+          <button class="delbtn" onclick=" deleteValue()">DEL</button>
+          <button onclick="getValue(4)">4</button>
+          <button onclick="getValue(5)">5</button>
+          <button onclick="getValue(6)">6</button>
+          <button onclick="getValue('+')">+</button>
+          <button onclick="getValue(1)">1</button>
+          <button onclick="getValue(2)">2</button>
+          <button onclick="getValue(3)">3</button>
+          <button onclick="getValue('-')">-</button>
+          <button onclick="getValue('.')">.</button>
+          <button onclick="getValue(0)">0</button>
+          <button onclick="getValue('/')">/</button>
+          <button onclick="getValue('*')">x</button>
+          <button onclick="valueReset()" class="reset">RESET</button>
+          <button class="eqaul" id="evaluate" onclick="displayResult()">=</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script src="./script.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Raphael MIcahel</a>.
+  </div> -->
+</body>
+
+</html>
